@@ -1,6 +1,6 @@
 # Security Dashboard
 
-**NOTE: initial commit. *Don't expect too much!***
+*TODO: Add brief introduction to the project.*
 
 **Motivation**
 
@@ -11,9 +11,9 @@ Having reviewed a fair number of ISO standards, it was time to look online at so
 * ~~setup vite for bundling~~
 * ~~add useful resources to repo~~
 * ~~add .gitignore~~
-* wireframes
-* grab boilerplate from [flowbite](https://flowbite.com/blocks/)
-* translate/implement wireframes for dashboard
+* ~~wireframes~~
+* ~~grab boilerplate from [flowbite](https://flowbite.com/blocks/)~~
+* translate/implement wireframes for dashboard *<-- in progress*
 * consider other pages:
   * Audit Logs
   * Policies
@@ -22,6 +22,71 @@ Having reviewed a fair number of ISO standards, it was time to look online at so
 * fix README.md
 * Review additional ISO standards
 * Revise Dashboard
+
+## Tasks
+
+**TODO: Include trello link for publicly viewable progress initially.**
+**TODO: Consider migrating to GitHub Projects if anyone seems interested in building this into something more than a mock-up dashboard.**
+
+*Contributors are welcome! Please fork, modify and open a PR if you would like to contribute. Contributions guidelines will be added when the minimum set of constraints are satisfied.*
+
+* Epic: **Provide a simple mock up for a security dashboard.** *(In Progress)*
+  * ~~Sprint 1: Draft Wireframes, Grab Boilerplate, Built out template.~~
+    * ~~Task: Draft Wireframes (at least one).~~
+    * ~~Task: Pull in boilerplate from flowbite.~~
+    * ~~Task: Put together an initial template.~~
+    * ~~Task: Include a header, with links for:~~
+      * ~~Dashboard~~
+      * ~~Audit Logs~~
+      * ~~Policies~~
+      * ~~SIEM (strech goal)~~
+  * ~~Sprint 2: Produce UI to report metrics in the form of cards.~~
+    * ~~Task: Integrate eight generic, blank cards into body of the Dashboard page.~~
+    * ~~Task: Fill each card with any metric for the time being, as they will be replaced with metrics from the BSC.~~
+    * ~~Task: Allow for each card to take the form of reporting metrics as either:~~
+      * ~~Percentages (with a progress bar), such as test coverage, or MFA coverage.~~
+      * ~~Fractional Completion Metrics (e.g. 3/4 audits passed this year)~~
+      * ~~Counts (e.g. Unaddressed Certificate Expiries, within the last 7 days).~~
+    * ~~Ensure the UI is mobile responsive.~~
+  * Sprint 3: Produce visualisation features in the form of charts, for the dashboard.
+    * Task: Select appropriate UI libraries, e.g. charts.js, d3.js (more appropriate for SIEM).
+    * ~~Task: Apply for an educational license from Highcharts.~~
+    * Task: consider which metrics or alternative combinatorial metrics ought to be visualised. *(In Progress)*
+    * Task: Produce at least two (consider three) visualisations for the dashbaord.
+    * Task: Ensure the dashboard continues to be mobile responsive.
+  * Sprint 4: Produce Effective Tables for the Dashboard (at least one).
+    * Task: Select an appropriate table/datatables library (something resembling a CRUD list would be fine).
+    * Task: Implement a metric or two on one or two tables (consider: Vulnerability Tracking at minimum).
+    * Task: Ensure tables are filterable and searchable.
+    * Task: Ensure the dashboard continues to be mobile responsive.
+  * Sprint 5: Add finishing touches.
+    * Task: Consider adding a footer.
+    * Task: Add a references page, this is a nice touch, given this is an education/academic project (but very practical).
+    * Task: Carefully consisder UX and choice of colours.
+    * Task: Consider implementing a switch between dark-mode and light-mode.
+    * Task: Any other considerations that may have been overlooked.
+  * Sprint 6: Release current implementation for public consumption and request contributors.
+    * Task: Set up a basic CI/CD pipeline.
+    * Task: Modify README.md
+      * Task: Add contributing guidelines and project roadmap.
+      * Task: Add list of dependencies:
+        * `node` + minimum required version number
+      * Task: Add instructions for use:
+        * `git clone`
+        * `cd security-dashboard`
+        * `npm install`
+        * `npm run dev`
+      * Task: Any final changes.
+      * Task: Release first iteration.
+
+* Epic: **Implement Other Pages**
+  * *TODO: Fill out task list*
+
+* Epic: **Simulate Real-Time incoming data, this will require managing state and an a back-end API, at this point, will probably need to switch to using something like React.**
+  * *TODO: Fill out task list*
+
+* Epic: **Simulate Real-time attacks on request, essentially making this an educational tool for the use of monitoring and SIEM for identification, containment and remediation.**
+  * *TODO: Fill out task list*
 
 ## Useful links, resources and references: 
 
