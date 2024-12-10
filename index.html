@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark bg-gray-900">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -42,7 +42,7 @@
                 alt="user photo"
               />
             </button>
-            <div class="hidden z-50 my-4 w-56 text-base list-none bg-white divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl" id="dropdown">
+            <div class="hidden z-50 my-4 w-56 text-base list-none divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl" id="dropdown">
 
             </div>
           </div>
@@ -95,12 +95,23 @@
         </div>
       </nav>
   
+      <!-- Alerts -->
       <div class="bg-red-100 text-red-800 text-sm p-2 text-center">
-        Alert: Overdue Revocations detected! Please review Revocation Control Panel.
+        Alert: Overdue Revocations detected! Please review Remediation Process.
       </div>
 
+      <!-- TODO: Add Modal Alerts (when some event is triggered) -->
+
+      <!-- KPI Cards -->
       <main class="p-4 h-auto">
+
+        <div class="flex justify-end mb-3 px-2">
+          <!-- <span class="text-xs text-gray-500">Security Status: <span class="text-xs border border-green-400 bg-green-300 text-green-800 py-0.5 px-1 rounded">Good</span></span> -->
+          <span class="text-xs text-gray-500">Last updated: 2024-12-15 10:30 AM</span>
+        </div>
+
         <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <!-- System Health -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">System Health</h3>
             <p class="text-xl font-bold text-green-400">92%</p>
@@ -109,6 +120,7 @@
               <div class="bg-green-400 h-2 rounded-full" style="width:92%"></div>
             </div>
           </div>
+          <!-- Incident Response Time -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">Incident Response Time</h3>
             <p class="text-xl font-bold text-amber-400 mt-1">30 min</p>
@@ -118,6 +130,7 @@
               <span class="text-xs bg-yellow-100 text-yellow-800 py-1 px-2 rounded">On Track</span>
             </div>
           </div>
+          <!-- Staff Training -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">Staff Training</h3>
             <div class="flex items-center space-x-2 space-y-2">
@@ -129,6 +142,7 @@
               <div class="bg-cyan-400 h-2 rounded-full" style="width:72%"></div>
             </div>
           </div>
+          <!-- External Audits -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">External Audits Passed</h3>
             <p class="text-xl font-bold text-fuchsia-400 mt-1">3/3</p>
@@ -138,6 +152,7 @@
               <span class="text-xs border border-green-400 bg-green-300 text-green-800 py-0.5 px-1 rounded">Excellent</span>
             </div>
           </div>
+          <!-- Accounts Reviewed -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white mb-1">Accounts Reviewed</h3>
             <div class="flex items-center space-x-2 space-y-2">
@@ -149,6 +164,7 @@
               <div class="bg-cyan-400 h-2 rounded-full" style="width:95%"></div>
             </div>
           </div>
+          <!-- MFA Coverage -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">Multi-Factor Enabled</h3>
             <p class="text-xl font-bold text-green-400 mt-1">100%</p>
@@ -157,6 +173,7 @@
               <div class="bg-green-400 h-2 rounded-full" style="width:100%"></div>
             </div>
           </div>
+          <!-- Revocation Checks -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600 h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">Overdue Certificate Expiries</h3>
             <p class="text-xl font-bold text-rose-500 mt-1">1</p>
@@ -164,10 +181,11 @@
             <div class="mt-2 flex items-center space-x-2">
               <span class="text-xs bg-red-100 font-medium text-red-800 py-1 px-2 rounded">Attention</span>
               <button class="text-xs bg-blue-100 text-blue-800 py-1 px-2 rounded hover:bg-blue-200">
-                Remedy
+                Remediate
               </button>
             </div>
           </div>
+          <!-- Mean Time To Patch -->
           <div class="flex flex-col justify-center p-4 lg:m-0.5 border-2 rounded-lg dark:bg-gray-800 dark:border-slate-600  h-32 md:h-32">
             <h3 class="text-sm font-medium text-white">MTTP (Mean Time to Patch)</h3>
             <p class="text-xl font-bold text-amber-400 mt-1">6 hrs</p>
@@ -177,21 +195,130 @@
             </div>
           </div>
         </div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"></div>
+
+        <!-- Remainder of the Dashboard -->
+
+        <!-- large body of content -->
+
+        <!-- grid of 2x2, depending on width, maybe 2x1 -->
+
         <div class="grid grid-cols-2 gap-4 mb-4">
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-        </div>
-        <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"></div>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
-          <div class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"></div>
+          <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-72 lg:h-96" id="access"></div>
+          <div class="border rounded-lg border-gray-300 dark:border-gray-600 h-72 lg:h-96" id="heatmap"></div>
+          <div class="hidden lg:table p-4 border rounded-lg border-gray-300 dark:border-gray-600 lg:h-48 dark:bg-gray-800 shadow">
+            <h2 class="text-lg font-semibold text-gray-500 dark:text-white mb-2">Known Vulnerabilities</h2>
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead class="bg-gray-50 dark:bg-gray-700">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    ID
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Description
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Severity
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    System
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">VCODE-1</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">Remote code execution</td>
+                  <td class="px-6 py-4 text-sm font-bold text-rose-400">High</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">AMA</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">VCODE-2</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">Privilege Escalation</td>
+                  <td class="px-6 py-4 text-sm font-bold text-cyan-400">Medium</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">AFA</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">VCODE-3</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">Credential Stuffing</td>
+                  <td class="px-6 py-4 text-sm font-bold text-cyan-400">Medium</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">ALM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="hidden lg:table p-4 border rounded-lg border-gray-300 dark:border-gray-600 lg:h-48 dark:bg-gray-800 shadow">
+            <h2 class="text-lg font-semibold text-gray-500 dark:text-white mb-2">Tests Passing</h2>
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <thead class="bg-gray-50 dark:bg-gray-700">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Test ID
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Strategy
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Vulnerabilities
+                  </th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Passed
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">#4</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">SAST</td>
+                  <td class="px-6 py-4 text-sm font-bold text-cyan-400">NONE</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">TRUE</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">#5</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">DAST</td>
+                  <td class="px-6 py-4 text-sm font-bold text-cyan-400">NONE</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">TRUE</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">#6</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">SIM</td>
+                  <td class="px-6 py-4 text-sm font-bold  text-rose-400">BUFFER OVERFLOW</td>
+                  <td class="px-6 py-4 text-sm text-gray-500 dark:text-gray-400">FALSE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         
+        <!-- consider: lg:w-1/2 -->
+        <div class="border rounded-lg dark:bg-gray-800 dark:border-slate-600 h-42 lg:h-24 w-100 mb-8">
+          <div class="p-4 rounded hover:shadow-md transition flex flex-col space-y-1">
+            <h3 class="text-sm font-medium text-white">Security Status</h3>
+            <div class="flex items-center space-x-2">
+              <span class="text-xs bg-green-100 text-green-800 py-1 px-2 rounded">Encrypted Data</span>
+              <span class="text-xs bg-green-100 text-green-800 py-1 px-2 rounded">ISO 27000 Compliant</span>
+              <span class="text-xs bg-green-100 text-green-800 py-1 px-2 rounded">ISO 31000 Compliant</span>
+              <span class="text-xs bg-red-100 font-medium text-red-800 py-1 px-2 rounded">Overdue Certificates</span>
+              <span class="text-xs bg-red-100 font-medium text-red-800 py-1 px-2 rounded">Attention: MTTP</span>
+            </div>
+            <p class="text-xs text-gray-400">Last Penetration Test: Nov 2024</p>
+          </div>
+        </div>
+
+        <footer class="bg-white rounded-lg shadow dark:bg-gray-800">
+          <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Redfriars™</a>. All Rights Reserved.
+          </span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">References</a>
+              </li>
+          </ul>
+          </div>
+        </footer>
+
       </main>
     </div>
     <script type="module" src="/src/main.js"></script>

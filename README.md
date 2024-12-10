@@ -1,5 +1,7 @@
 # Security Dashboard
 
+**Note: the use of Highcharts is licensed under an approved educational license for this project. However, due to the limitations of the license agreement, any PRs that make changes or use of Highcharts cannot be merged. Due to this limitation, if the project gains any traction, the use of Highcharts will have to be reconsidered.**
+
 *TODO: Add brief introduction to the project.*
 
 **Motivation**
@@ -13,11 +15,11 @@ Having reviewed a fair number of ISO standards, it was time to look online at so
 * ~~add .gitignore~~
 * ~~wireframes~~
 * ~~grab boilerplate from [flowbite](https://flowbite.com/blocks/)~~
-* translate/implement wireframes for dashboard *<-- in progress*
-* consider other pages:
-  * Audit Logs
-  * Policies
-  * SIEM
+* ~~translate/implement wireframes for dashboard ~~
+* ~~consider other pages:~~
+  * ~~Audit Logs~~
+  * ~~Policies~~
+  * ~~SIEM~~
   * Add a seperate page for references on the front-end
 * fix README.md
 * Review additional ISO standards
@@ -48,22 +50,20 @@ Having reviewed a fair number of ISO standards, it was time to look online at so
       * ~~Fractional Completion Metrics (e.g. 3/4 audits passed this year)~~
       * ~~Counts (e.g. Unaddressed Certificate Expiries, within the last 7 days).~~
     * ~~Ensure the UI is mobile responsive.~~
-  * Sprint 3: Produce visualisation features in the form of charts, for the dashboard.
-    * Task: Select appropriate UI libraries, e.g. charts.js, d3.js (more appropriate for SIEM).
+  * ~~Sprint 3: Produce visualisation features in the form of charts, for the dashboard.~~
+    * ~~Task: Select appropriate UI libraries, e.g. charts.js, d3.js (more appropriate for SIEM).~~
     * ~~Task: Apply for an educational license from Highcharts.~~
-    * Task: consider which metrics or alternative combinatorial metrics ought to be visualised. *(In Progress)*
-    * Task: Produce at least two (consider three) visualisations for the dashbaord.
-    * Task: Ensure the dashboard continues to be mobile responsive.
-  * Sprint 4: Produce Effective Tables for the Dashboard (at least one).
-    * Task: Select an appropriate table/datatables library (something resembling a CRUD list would be fine).
-    * Task: Implement a metric or two on one or two tables (consider: Vulnerability Tracking at minimum).
-    * Task: Ensure tables are filterable and searchable.
-    * Task: Ensure the dashboard continues to be mobile responsive.
+    * ~~Task: consider which metrics or alternative combinatorial metrics ought to be visualised. ~~
+    * ~~Task: Produce at least two (consider three) visualisations for the dashbaord.~~
+    * ~~Task: Ensure the dashboard continues to be mobile responsive.~~
+  * ~~Sprint 4: Produce Effective Tables for the Dashboard (at least one).~~
+    * ~~Task: Select an appropriate table/datatables library (something resembling a CRUD list would be fine).~~
+    * ~~Task: Implement a metric or two on one or two tables (consider: Vulnerability Tracking at minimum).~~
+    * ~~Task: Ensure the dashboard continues to be mobile responsive.~~
   * Sprint 5: Add finishing touches.
-    * Task: Consider adding a footer.
+    * ~~Task: Consider adding a footer.~~
     * Task: Add a references page, this is a nice touch, given this is an education/academic project (but very practical).
-    * Task: Carefully consisder UX and choice of colours.
-    * Task: Consider implementing a switch between dark-mode and light-mode.
+    * ~~Task: Carefully consisder UX and choice of colours.~~
     * Task: Any other considerations that may have been overlooked.
   * Sprint 6: Release current implementation for public consumption and request contributors.
     * Task: Set up a basic CI/CD pipeline.
